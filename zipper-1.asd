@@ -8,5 +8,5 @@
                (:file "zipper-1")))
 
 (defmethod perform ((o test-op) (c (eql (find-system 'zipper-1))))
-  (operate 'load-op 'zipper-test)
-  (operate 'test-op 'kmrcl-test :force t))
+  (operate 'load-op 'zipper-1-test)
+  (operate 'test-op 'zipper-1-test :force t))
